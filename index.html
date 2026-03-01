@@ -12,6 +12,20 @@
     <div class="container">
         <h1>Rock Paper Scissors</h1>
 
+        <div class="vs-row">
+            <div class="choice-display">
+                <p>You</p>
+                <div class="choice-card" id="playerDisplay">❓</div>
+            </div>
+            <div class="vs-text">VS</div>
+            <div class="choice-display">
+                <p>CPU</p>
+                <div class="choice-card" id="computerDisplay">❓</div>
+            </div>
+        </div>
+
+        <p id="result">Choose your weapon!</p>
+
         <div class="buttons-row">
             <button id="rock" onclick="play('rock')">
                 <img src="rock.png" alt="Rock">
@@ -27,12 +41,9 @@
             </button>
         </div>
 
-        <p id="result">Result :</p>
-        <p id="score">
-            You = <span id="playerScore">0</span>
-            &nbsp;|&nbsp;
-            COM = <span id="computerScore">0</span>
-        </p>
+        <p id="score"> You <span id="playerScore">0</span> &nbsp;|&nbsp; CPU <span id="computerScore">0</span></p>
+        <p id="bestOf">Best of 3 — Round <span id="roundNum">1</span> of 3</p>
+        <button id="resetBtn" onclick="resetGame()"> Reset</button>
     </div>
 
     <script src="script.js"></script>
