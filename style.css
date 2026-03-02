@@ -195,7 +195,6 @@ button img {
     text-shadow: 0 0 20px rgba(255,213,79,0.5);
 }
 
-/* Win/Lose/Tie animations */
 .choice-card.win {
     border-color: #69f0ae;
     box-shadow: 0 0 25px rgba(105,240,174,0.6);
